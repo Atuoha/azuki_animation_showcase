@@ -1,4 +1,4 @@
-import 'package:azuki_animation_showcase/constants/color.dart';
+import 'package:azuki_animation_showcase/constants/constants.dart';
 import 'package:azuki_animation_showcase/screens/info.dart';
 import 'package:flutter/material.dart';
 import 'package:animations/animations.dart';

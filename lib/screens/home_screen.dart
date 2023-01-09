@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../constants/color.dart';
+import '../constants/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../data/data.dart';
 import '../widgets/data_widget.dart';
@@ -39,8 +39,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
     return Scaffold(
-      floatingActionButton: FloatingButton(),
-      backgroundColor: Colors.white70,
+      floatingActionButton: const FloatingButton(),
+      backgroundColor: bgColor,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,

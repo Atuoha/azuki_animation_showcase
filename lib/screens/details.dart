@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:readmore/readmore.dart';
 
-import '../constants/color.dart';
+import '../components/row_wrap.dart';
+import '../constants/constants.dart';
 import '../models/data.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -57,10 +59,11 @@ class DetailsScreen extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-         const  SizedBox(height:5),
+          const SizedBox(height: 5),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 18.0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   data.title,
@@ -68,6 +71,45 @@ class DetailsScreen extends StatelessWidget {
                     fontWeight: FontWeight.w900,
                     fontSize: 30,
                   ),
+                ),
+                const SizedBox(height: 10),
+                ReadMoreText(
+                  data.content,
+                  trimLines: 2,
+                  preDataTextStyle: const TextStyle(fontWeight: FontWeight.w500),
+                  style: const TextStyle(color: Colors.black),
+                  colorClickableText: litePrimary,
+                  trimMode: TrimMode.Line,
+                  trimCollapsedText: '...Show more',
+                  trimExpandedText: ' show less',
+                ),
+                const SizedBox(height: 12),
+                RowWrap(
+                  icon1: Icons.person,
+                  data1: data.hair,
+                  icon2: Icons.ac_unit,
+                  data2: data.mouth,
+                ),
+                const SizedBox(height: 10),
+                RowWrap(
+                  icon1: Icons.remove_red_eye_outlined,
+                  data1: data.eyes,
+                  icon2: Icons.back_hand_outlined,
+                  data2: data.background,
+                ),
+                const SizedBox(height: 10),
+                RowWrap(
+                  icon1: Icons.handshake,
+                  data1: data.offhand,
+                  icon2: Icons.nature,
+                  data2: data.headgear,
+                ),
+                const SizedBox(height: 10),
+                RowWrap(
+                  icon1: Icons.person_pin_rounded,
+                  data1: data.clothing,
+                  icon2: Icons.group,
+                  data2: data.type,
                 ),
               ],
             ),

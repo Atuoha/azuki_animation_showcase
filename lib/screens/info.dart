@@ -1,7 +1,10 @@
+import 'package:animations/animations.dart';
+import 'package:azuki_animation_showcase/data/mind_map.dart';
+import 'package:azuki_animation_showcase/screens/info_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
-import '../constants/color.dart';
+import '../constants/constants.dart';
+import '../widgets/single_mind_map.dart';
 
 class InfoScreen extends StatelessWidget {
   const InfoScreen({Key? key}) : super(key: key);
@@ -43,7 +46,28 @@ class InfoScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Column()
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 18.0),
+        child: GridView.builder(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 10,
+            crossAxisSpacing: 10,
+          ),
+          itemCount: mindMapItems.length,
+          itemBuilder: (context, index) => OpenContainer(
+            transitionDuration: const Duration(seconds: 1),
+            transitionType: ContainerTransitionType.fadeThrough,
+            closedBuilder: (BuildContext context, void Function() action) =>
+                SingleMindMap(map: mindMapItems[index]),
+            openBuilder: (BuildContext context,
+                    void Function({Object? returnValue}) action) =>
+                InfoDetails(
+              item: mindMapItems[index],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
