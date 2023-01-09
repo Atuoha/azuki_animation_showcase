@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/data.dart';
+import 'expanded_widget.dart';
 import 'image_data_widget.dart';
 
 class DataWidget extends StatefulWidget {
@@ -36,9 +37,16 @@ class _DataWidgetState extends State<DataWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return  Stack(
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Stack(
         alignment: Alignment.center,
         children: [
+          AnimatedOpacity(
+            opacity: isExpanded ? 1 : 0,
+            duration: const Duration(milliseconds: 1500),
+            child: ExpandedWidget(data: widget.data),
+          ),
           AnimatedPositioned(
             bottom: isExpanded ? 150 : 100,
             duration: const Duration(milliseconds: 500),
@@ -49,7 +57,7 @@ class _DataWidgetState extends State<DataWidget> {
             ),
           )
         ],
-
+      ),
     );
   }
 }
