@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     pageController =
-        PageController(initialPage: pageIndex, viewportFraction: 1);
+        PageController(initialPage: pageIndex, viewportFraction: 0.88);
   }
 
   changePage(int index) {
@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
       ),
       body: PageView.builder(
-        allowImplicitScrolling: true,
+        controller: pageController,
         itemCount: dataItems.length,
         onPageChanged: (index) => changePage(index),
         itemBuilder: (context, index) => DataWidget(data: dataItems[index]),

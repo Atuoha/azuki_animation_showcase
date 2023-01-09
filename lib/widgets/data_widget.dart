@@ -22,12 +22,12 @@ class _DataWidgetState extends State<DataWidget> {
     });
   }
 
-  panUpdate(DragUpdateDetails details){
-    if(details.delta.dy < 0){
+  panUpdate(DragUpdateDetails details) {
+    if (details.delta.dy < 0) {
       setState(() {
         isExpanded = true;
       });
-    }else if(details.delta.dy > 0){
+    } else if (details.delta.dy > 0) {
       setState(() {
         isExpanded = false;
       });
@@ -36,15 +36,10 @@ class _DataWidgetState extends State<DataWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal:4.0),
-      child: Stack(
+    return  Stack(
         alignment: Alignment.center,
         children: [
           AnimatedPositioned(
-            // left: 0,
-            // right: 0,
-            // top: 0,
             bottom: isExpanded ? 150 : 100,
             duration: const Duration(milliseconds: 500),
             child: GestureDetector(
@@ -54,7 +49,7 @@ class _DataWidgetState extends State<DataWidget> {
             ),
           )
         ],
-      ),
+
     );
   }
 }
