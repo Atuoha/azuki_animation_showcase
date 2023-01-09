@@ -10,6 +10,7 @@ class DataItem {
   final String offhand;
   final String background;
   final String imgUrl;
+  final String content;
 
   DataItem({
     required this.id,
@@ -23,5 +24,6 @@ class DataItem {
     required this.mouth,
     required this.offhand,
     required this.imgUrl,
+    required this.content,
   });
 }

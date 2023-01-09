@@ -13,6 +13,8 @@ final List<DataItem> dataItems = [
     mouth: 'Closed',
     offhand: 'Lantern',
     imgUrl: 'assets/images/a.png',
+    content:
+        "Azuki is a brand. A new kind of brand that we build together. A brand for the metaverse. By the community.A collection of 10,000 avatars that give you membership access to The Garden. It starts with exclusive streetwear collabs, NFT drops, live events, and much more that will be revealed over time. Community ownership in Azuki allows for a new genre of media which the world has yet to explore. An Azuki is your identity in the metaverse — let's build together.",
   ),
   DataItem(
     id: 2,
@@ -26,6 +28,8 @@ final List<DataItem> dataItems = [
     mouth: 'Gaiter',
     offhand: 'Fan',
     imgUrl: 'assets/images/b.png',
+    content:
+        "Azuki is a brand. A new kind of brand that we build together. A brand for the metaverse. By the community.A collection of 10,000 avatars that give you membership access to The Garden. It starts with exclusive streetwear collabs, NFT drops, live events, and much more that will be revealed over time. Community ownership in Azuki allows for a new genre of media which the world has yet to explore. An Azuki is your identity in the metaverse — let's build together.",
   ),
   DataItem(
     id: 3,
@@ -39,6 +43,8 @@ final List<DataItem> dataItems = [
     mouth: 'Face Mask',
     offhand: 'No Offhand',
     imgUrl: 'assets/images/c.png',
+    content:
+        "Azuki is a brand. A new kind of brand that we build together. A brand for the metaverse. By the community.A collection of 10,000 avatars that give you membership access to The Garden. It starts with exclusive streetwear collabs, NFT drops, live events, and much more that will be revealed over time. Community ownership in Azuki allows for a new genre of media which the world has yet to explore. An Azuki is your identity in the metaverse — let's build together.",
   ),
   DataItem(
     id: 4,
@@ -52,6 +58,8 @@ final List<DataItem> dataItems = [
     mouth: 'Whistling',
     offhand: 'Skateboard',
     imgUrl: 'assets/images/d.png',
+    content:
+        "Azuki is a brand. A new kind of brand that we build together. A brand for the metaverse. By the community.A collection of 10,000 avatars that give you membership access to The Garden. It starts with exclusive streetwear collabs, NFT drops, live events, and much more that will be revealed over time. Community ownership in Azuki allows for a new genre of media which the world has yet to explore. An Azuki is your identity in the metaverse — let's build together.",
   ),
   DataItem(
     id: 5,
@@ -65,6 +73,8 @@ final List<DataItem> dataItems = [
     mouth: 'Gaiter',
     offhand: 'Sakura Katana',
     imgUrl: 'assets/images/e.png',
+    content:
+        "Azuki is a brand. A new kind of brand that we build together. A brand for the metaverse. By the community.A collection of 10,000 avatars that give you membership access to The Garden. It starts with exclusive streetwear collabs, NFT drops, live events, and much more that will be revealed over time. Community ownership in Azuki allows for a new genre of media which the world has yet to explore. An Azuki is your identity in the metaverse — let's build together.",
   ),
   DataItem(
     id: 6,
@@ -78,6 +88,8 @@ final List<DataItem> dataItems = [
     mouth: 'Chuckle',
     offhand: 'Shinai',
     imgUrl: 'assets/images/f.png',
+    content:
+        "Azuki is a brand. A new kind of brand that we build together. A brand for the metaverse. By the community.A collection of 10,000 avatars that give you membership access to The Garden. It starts with exclusive streetwear collabs, NFT drops, live events, and much more that will be revealed over time. Community ownership in Azuki allows for a new genre of media which the world has yet to explore. An Azuki is your identity in the metaverse — let's build together.",
   ),
   DataItem(
     id: 7,
@@ -91,6 +103,8 @@ final List<DataItem> dataItems = [
     mouth: 'Smoking',
     offhand: 'Bat Band',
     imgUrl: 'assets/images/g.png',
+    content:
+        "Azuki is a brand. A new kind of brand that we build together. A brand for the metaverse. By the community.A collection of 10,000 avatars that give you membership access to The Garden. It starts with exclusive streetwear collabs, NFT drops, live events, and much more that will be revealed over time. Community ownership in Azuki allows for a new genre of media which the world has yet to explore. An Azuki is your identity in the metaverse — let's build together.",
   ),
   DataItem(
     id: 8,
@@ -104,6 +118,8 @@ final List<DataItem> dataItems = [
     mouth: 'Smirk',
     offhand: 'Fan',
     imgUrl: 'assets/images/h.png',
+    content:
+        "Azuki is a brand. A new kind of brand that we build together. A brand for the metaverse. By the community.A collection of 10,000 avatars that give you membership access to The Garden. It starts with exclusive streetwear collabs, NFT drops, live events, and much more that will be revealed over time. Community ownership in Azuki allows for a new genre of media which the world has yet to explore. An Azuki is your identity in the metaverse — let's build together.",
   ),
   DataItem(
     id: 9,
@@ -117,6 +133,8 @@ final List<DataItem> dataItems = [
     mouth: 'Closed',
     offhand: 'Katana',
     imgUrl: 'assets/images/i.png',
+    content:
+        "Azuki is a brand. A new kind of brand that we build together. A brand for the metaverse. By the community.A collection of 10,000 avatars that give you membership access to The Garden. It starts with exclusive streetwear collabs, NFT drops, live events, and much more that will be revealed over time. Community ownership in Azuki allows for a new genre of media which the world has yet to explore. An Azuki is your identity in the metaverse — let's build together.",
   ),
   DataItem(
     id: 10,
@@ -130,5 +148,7 @@ final List<DataItem> dataItems = [
     mouth: 'Smirk',
     offhand: 'Banner',
     imgUrl: 'assets/images/j.png',
+    content:
+        "Azuki is a brand. A new kind of brand that we build together. A brand for the metaverse. By the community.A collection of 10,000 avatars that give you membership access to The Garden. It starts with exclusive streetwear collabs, NFT drops, live events, and much more that will be revealed over time. Community ownership in Azuki allows for a new genre of media which the world has yet to explore. An Azuki is your identity in the metaverse — let's build together.",
   ),
 ];

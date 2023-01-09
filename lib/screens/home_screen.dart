@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'constants/color.dart';
+import '../constants/color.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'data/data.dart';
-import 'widgets/data_widget.dart';
+import '../data/data.dart';
+import '../widgets/data_widget.dart';
+import '../widgets/floating_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -38,6 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
     return Scaffold(
+      floatingActionButton: FloatingButton(),
       backgroundColor: Colors.white70,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -48,6 +50,17 @@ class _HomeScreenState extends State<HomeScreen> {
           color: litePrimary,
         ),
         centerTitle: true,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 18.0),
+          child: IconButton(
+            onPressed: () => {},
+            icon: Icon(
+              Icons.search,
+              color: litePrimary,
+              size: 40,
+            ),
+          ),
+        ),
       ),
       body: PageView.builder(
         controller: pageController,

@@ -1,3 +1,4 @@
+import 'package:azuki_animation_showcase/components/row_wrap.dart';
 import 'package:flutter/material.dart';
 
 import '../models/data.dart';
@@ -9,56 +10,32 @@ class ExpandedWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 20),
-      padding: const EdgeInsets.all(10),
+      padding: const EdgeInsets.all(2),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: Colors.white,
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Wrap(
-                children: [
-                  const Icon(Icons.person),
-                  const SizedBox(width: 10),
-                  Text(data.hair)
-                ],
-              ),
-              Wrap(
-                children: [
-                  const Icon(Icons.ac_unit),
-                  const SizedBox(width: 10),
-                  Text(data.mouth)
-                ],
-              )
-            ],
-          ),
-          const SizedBox(height: 10),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Wrap(
-                children: [
-                  const Icon(Icons.remove_red_eye_outlined),
-                  const SizedBox(width: 10),
-                  Text(data.eyes)
-                ],
-              ),
-              Wrap(
-                children: [
-                  const Icon(Icons.back_hand_outlined),
-                  const SizedBox(width: 10),
-                  Text(data.mouth)
-                ],
-              )
-            ],
-          )
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            RowWrap(
+              icon1: Icons.person,
+              data1: data.hair,
+              icon2: Icons.ac_unit,
+              data2: data.mouth,
+            ),
+            const SizedBox(height: 10),
+            RowWrap(
+              icon1: Icons.remove_red_eye_outlined,
+              data1: data.eyes,
+              icon2: Icons.back_hand_outlined,
+              data2: data.background,
+            )
+          ],
+        ),
       ),
     );
   }

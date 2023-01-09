@@ -18,7 +18,6 @@ class ImageDataWidget extends StatelessWidget {
       width: size.width * 0.8,
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.red,
           borderRadius: BorderRadius.circular(20),
         ),
         child: Stack(
@@ -67,7 +66,10 @@ class ImageDataWidget extends StatelessWidget {
     return SizedBox.expand(
       child: ClipRRect(
         borderRadius: const BorderRadius.all(Radius.circular(20)),
-        child: Image.asset(data.imgUrl, fit: BoxFit.cover),
+        child: Hero(
+          tag: data.id,
+          child: Image.asset(data.imgUrl, fit: BoxFit.cover),
+        ),
       ),
     );
   }
