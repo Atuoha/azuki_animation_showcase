@@ -1,7 +1,7 @@
 import '../models/data.dart';
 
-final List<Data> dataItems = [
-  Data(
+final List<DataItem> dataItems = [
+  DataItem(
     id: 1,
     title: 'Azuki 7893',
     type: 'Human',
@@ -14,7 +14,7 @@ final List<Data> dataItems = [
     offhand: 'Lantern',
     imgUrl: 'assets/images/a.png',
   ),
-  Data(
+  DataItem(
     id: 2,
     title: 'Azuki 5673',
     type: 'Human',
@@ -27,7 +27,7 @@ final List<Data> dataItems = [
     offhand: 'Fan',
     imgUrl: 'assets/images/b.png',
   ),
-  Data(
+  DataItem(
     id: 3,
     title: 'Azuki 9088',
     type: 'Human',
@@ -40,7 +40,7 @@ final List<Data> dataItems = [
     offhand: '',
     imgUrl: 'assets/images/c.png',
   ),
-  Data(
+  DataItem(
     id: 4,
     title: 'Azuki 9801',
     type: 'Human',
@@ -53,7 +53,7 @@ final List<Data> dataItems = [
     offhand: 'Skateboard',
     imgUrl: 'assets/images/d.png',
   ),
-  Data(
+  DataItem(
     id: 5,
     title: 'Azuki 2172',
     type: 'Human',
@@ -66,7 +66,7 @@ final List<Data> dataItems = [
     offhand: 'Sakura Katana',
     imgUrl: 'assets/images/e.png',
   ),
-  Data(
+  DataItem(
     id: 6,
     title: 'Azuki 7457',
     type: 'Human',
@@ -79,7 +79,7 @@ final List<Data> dataItems = [
     offhand: 'Shinai',
     imgUrl: 'assets/images/f.png',
   ),
-  Data(
+  DataItem(
     id: 7,
     title: 'Azuki 9392',
     type: 'Human',
@@ -92,7 +92,7 @@ final List<Data> dataItems = [
     offhand: 'Bat Band',
     imgUrl: 'assets/images/g.png',
   ),
-  Data(
+  DataItem(
     id: 8,
     title: 'Azuki 2109',
     type: 'Human',
@@ -105,7 +105,7 @@ final List<Data> dataItems = [
     offhand: 'Fan',
     imgUrl: 'assets/images/h.png',
   ),
-  Data(
+  DataItem(
     id: 9,
     title: 'Azuki 8765',
     type: 'Human',
@@ -118,7 +118,7 @@ final List<Data> dataItems = [
     offhand: 'Katana',
     imgUrl: 'assets/images/i.png',
   ),
-  Data(
+  DataItem(
     id: 10,
     title: 'Azuki 4201',
     type: 'Human',

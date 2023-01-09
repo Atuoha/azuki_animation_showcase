@@ -1,4 +1,4 @@
-class Data {
+class DataItem {
   final int id;
   final String title;
   final String type;
@@ -11,7 +11,7 @@ class Data {
   final String background;
   final String imgUrl;
 
-  Data({
+  DataItem({
     required this.id,
     required this.title,
     required this.type,
