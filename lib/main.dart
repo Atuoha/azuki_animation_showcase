@@ -9,9 +9,10 @@ class AzukiApp extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    return const MaterialApp(
+    return  MaterialApp(
+      theme:ThemeData(fontFamily: 'Rajdhani'),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen()
+      home: const HomeScreen()
     );
   }
 }

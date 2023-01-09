@@ -37,7 +37,7 @@ final List<DataItem> dataItems = [
     background: 'Off White D',
     eyes: 'Ruby',
     mouth: 'Face Mask',
-    offhand: '',
+    offhand: 'No Offhand',
     imgUrl: 'assets/images/c.png',
   ),
   DataItem(
